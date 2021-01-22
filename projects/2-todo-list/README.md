@@ -20,7 +20,7 @@ More details for the implementation of this challenge can be found in `script.js
 Fork this repository and then open in VSCode. To view the website, open index.html in a browser.
 
 ## Example Solution
-
+ 
 A basic example of this can website can be found here
 
 https://chrisowen101.github.io/ToDoListSolution/

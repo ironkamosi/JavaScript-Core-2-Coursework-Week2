@@ -16,7 +16,6 @@ function todoList(todos) {
         liElement.style.textDecoration = "none";
       }
     });
-
     console.log(liElement);
   });
 

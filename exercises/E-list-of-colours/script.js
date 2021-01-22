@@ -20,9 +20,8 @@ function listOfColours(colours) {
 function addElement(element) {
   let optionEl = document.createElement("option"); // select
   optionEl.innerText = element;
- 
   return optionEl;
-  
 };
+
 const colours = ["red", "blue", "green", "yellow", "pink", "brown"];
 listOfColours(colours);

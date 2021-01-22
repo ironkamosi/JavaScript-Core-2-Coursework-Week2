@@ -50,18 +50,18 @@ function formButton(event) {
   let nameField = document.querySelector("#example-text-input");
   let describeField = document.querySelector("#exampleTextarea");
   console.log(nameField.value.length);
-  
-    if (!emailField.value.length > 0 || !emailField.value.includes("@")){
+
+  if (!emailField.value.length > 0 || !emailField.value.includes("@")) {
     emailField.style.backgroundColor = "#ff0000";
-    } else if (!nameField.value.length > 0) {
+  } else if (!nameField.value.length > 0) {
     nameField.style.backgroundColor = "#ff0000";
-    } else if (!describeField.value.length > 0) {
-     describeField.style.backgroundColor = "#ff0000";
+  } else if (!describeField.value.length > 0) {
+    describeField.style.backgroundColor = "#ff0000";
   } else {
-        alert("Thanks");
-        nameField.value = "";
-        emailField.value = "";
-        describeField.value = "";
+    alert("Thanks");
+    nameField.value = "";
+    emailField.value = "";
+    describeField.value = "";
   }
 }
 

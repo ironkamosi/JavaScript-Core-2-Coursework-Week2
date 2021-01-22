@@ -5,7 +5,6 @@ function readingList(books) {
   pageTitle.innerText = "Book Titles:";
   let list = document.createElement("ul"); // ul
 
-  
   books.forEach((book) => {
     let listItem = document.createElement("li"); // li
     if (book.alreadyRead === true) {
@@ -31,25 +30,25 @@ function readingList(books) {
   });
   content.appendChild(pageTitle);
   content.appendChild(list);
-
-  };
+}
 
 const books = [
   {
     title: "The Design of Everyday Things",
-    image:"https://productnotes.com/uploads/default/original/1X/ddbda1150301e89cdf0119d84f2a7fb8930beffb.png",
+    image:
+      "https://productnotes.com/uploads/default/original/1X/ddbda1150301e89cdf0119d84f2a7fb8930beffb.png",
     author: "Don Norman",
     alreadyRead: false,
   },
   {
     title: "The Most Human Human",
-    image:"https://images-na.ssl-images-amazon.com/images/I/81A-mvlo+QL.jpg",
+    image: "https://images-na.ssl-images-amazon.com/images/I/81A-mvlo+QL.jpg",
     author: "Brian Christian",
     alreadyRead: true,
   },
   {
     title: "The Pragmatic Programmer",
-    image:"https://blackwells.co.uk/jacket/l/9780135957059.jpg",
+    image: "https://blackwells.co.uk/jacket/l/9780135957059.jpg",
     author: "Andrew Hunt",
     alreadyRead: true,
   },

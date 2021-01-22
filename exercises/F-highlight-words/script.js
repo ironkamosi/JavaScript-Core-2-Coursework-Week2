@@ -1,55 +1,34 @@
 function highlightWords(paragraph, colours) {
-  let content = document.getElementById("content")
+  let content = document.getElementById("content");
   let paragraphEl = document.createElement("p");
   let selectEl = document.createElement("select");
   // Write your code here...
 
   colours.forEach((element) => {
     let optionEl = document.createElement("option");
-    optionEl.innerHTML = element; // creates a new option element 
+    optionEl.innerHTML = element; // creates a new option element
     selectEl.appendChild(optionEl);
   });
   content.appendChild(selectEl);
-  
+
   let paragraphArr = paragraph.split(" "); // turns paragraph
-  paragraphArr.forEach(element => {
+  paragraphArr.forEach((element) => {
     let spanEl = document.createElement("span");
     spanEl.innerHTML = element + " ";
-    
-     spanEl.addEventListener("click", function () {
-       console.log(spanEl);
-       console.log(selectEl.value)
-       //spanEl.style.backgroundColor = selectEl.value 
-    
-       if (selectEl.value === "none") { 
-         spanEl.style.backgroundColor = " "; 
-       } else {
-        spanEl.style.backgroundColor = selectEl.value
-       }
 
-             //   spanEl.style.backgroundColor = selectEl.value; 
-
-//           spanEl.style.backgroundColour = colour.value;
-//             console.log(colour);
-//             console.log(colour.value);
-
-
-       //console.log(selectEl.options[selectEl.selectedIndex])
-      
-      //  for (const colour of selectEl) {
-         
-               
-      //    }
-      //  }
-        
-       
-       })
+    spanEl.addEventListener("click", function () {
+      console.log(spanEl);
+      console.log(selectEl.value);
+      if (selectEl.value === "none") {
+        spanEl.style.backgroundColor = "";
+      } else {
+        spanEl.style.backgroundColor = selectEl.value;
+      }
+    });
     paragraphEl.appendChild(spanEl);
+  });
 
-     });
-  
   content.appendChild(paragraphEl);
-  //console.log(content)
 }
 
 const paragraph =
